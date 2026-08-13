@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    environment:
+      SPENDDECK_ALLOWED_HOSTS: localhost,127.0.0.1
+      SPENDDECK_DATA_DIR: /data
+      SPENDDECK_DEBUG: "false"
+      SPENDDECK_SECRET_KEY: ${SPENDDECK_SECRET_KEY:-unsafe-local-only-change-me}
+    ports:
+      - "8000:8000"
+    volumes:
+      - spenddeck-data:/data
+
+volumes:
+  spenddeck-data:

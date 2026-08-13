@@ -1,0 +1,23 @@
+schema_version: 1
+version: "2026-01-01"
+effective_from: 2026-01-01
+effective_to: null
+sources:
+  - title: Example card terms
+    url: https://example.com/card-terms
+    accessed_on: 2026-01-01
+benefits:
+  - id: quarterly_milestone
+    kind: milestone
+    name: Quarterly spend milestone
+    period: calendar_quarter
+    threshold: "100000.00"
+    reward:
+      kind: voucher
+      description: Example voucher
+      estimated_value: "1000.00"
+      expected_within_days: 60
+    exclusions:
+      - cash_advance
+      - fees
+      - rent

@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Django runtime data
+backend/data/*
+!backend/data/.gitkeep
+backend/staticfiles/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local configuration
+.env
+.DS_Store
